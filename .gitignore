@@ -1,0 +1,27 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# IDE & OS
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Large raw tracking files never accessed by system (Strict dataset policy: combined.csv only)
+**/head.csv
+**/eye.csv
+**/face.csv
+head.csv
+eye.csv
+face.csv

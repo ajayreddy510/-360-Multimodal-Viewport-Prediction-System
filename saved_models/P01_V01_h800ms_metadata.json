@@ -1,0 +1,413 @@
+{
+  "person_id": "P01",
+  "video_id": "V01",
+  "lookback_window": 30,
+  "prediction_horizon_sec": 0.8,
+  "target_names": [
+    "HeadYaw",
+    "HeadPitch",
+    "HeadRoll",
+    "GazeYaw",
+    "GazePitch",
+    "GazeRelativeH",
+    "GazeRelativeV",
+    "EyeHeadOffset",
+    "LeftOpenness",
+    "RightOpenness",
+    "SmileL",
+    "SmileR",
+    "BrowDownL",
+    "BrowDownR",
+    "JawOpen",
+    "FaceActivity"
+  ],
+  "feature_names": [
+    "HeadYaw",
+    "HeadYaw_sin",
+    "HeadYaw_cos",
+    "HeadPitch",
+    "HeadRoll",
+    "GazeYaw",
+    "GazeYaw_sin",
+    "GazeYaw_cos",
+    "GazePitch",
+    "GazeRelativeH",
+    "GazeRelativeV",
+    "EyeHeadOffset",
+    "AbsoluteGazeYaw",
+    "AbsoluteGazeYaw_sin",
+    "AbsoluteGazeYaw_cos",
+    "AbsoluteGazePitch",
+    "LeftOpenness",
+    "RightOpenness",
+    "BlinkL",
+    "BlinkR",
+    "SmileL",
+    "SmileR",
+    "BrowDownL",
+    "BrowDownR",
+    "JawOpen",
+    "EyeClosedL",
+    "EyeClosedR",
+    "FaceActivity"
+  ],
+  "raw_feature_names": [
+    "HeadYaw",
+    "HeadPitch",
+    "HeadRoll",
+    "GazeYaw",
+    "GazePitch",
+    "GazeRelativeH",
+    "GazeRelativeV",
+    "EyeHeadOffset",
+    "AbsoluteGazeYaw",
+    "AbsoluteGazePitch",
+    "LeftOpenness",
+    "RightOpenness",
+    "BlinkL",
+    "BlinkR",
+    "SmileL",
+    "SmileR",
+    "BrowDownL",
+    "BrowDownR",
+    "JawOpen",
+    "EyeClosedL",
+    "EyeClosedR",
+    "FaceActivity"
+  ],
+  "preprocessor_path": "C:\\Users\\dharu\\Documents\\prediction system new\\saved_models\\P01_V01_h800ms_preprocessor.joblib",
+  "rf_model_path": "C:\\Users\\dharu\\Documents\\prediction system new\\saved_models\\P01_V01_h800ms_rf_model.joblib",
+  "deep_model_path": "C:\\Users\\dharu\\Documents\\prediction system new\\saved_models\\P01_V01_h800ms_deep_model.pt",
+  "metrics": {
+    "persistence": {
+      "HeadYaw": {
+        "MAE": 6.2279,
+        "RMSE": 10.7526,
+        "MaxError": 53.9772,
+        "is_circular": true
+      },
+      "HeadPitch": {
+        "MAE": 1.6434,
+        "RMSE": 3.0223,
+        "MaxError": 18.2546,
+        "is_circular": false
+      },
+      "HeadRoll": {
+        "MAE": 0.6084,
+        "RMSE": 0.9743,
+        "MaxError": 5.8839,
+        "is_circular": false
+      },
+      "GazeYaw": {
+        "MAE": 11.0083,
+        "RMSE": 16.8038,
+        "MaxError": 62.2538,
+        "is_circular": true
+      },
+      "GazePitch": {
+        "MAE": 3.971,
+        "RMSE": 6.2318,
+        "MaxError": 28.7279,
+        "is_circular": false
+      },
+      "GazeRelativeH": {
+        "MAE": 8.1092,
+        "RMSE": 11.1946,
+        "MaxError": 41.9275,
+        "is_circular": false
+      },
+      "GazeRelativeV": {
+        "MAE": 5.0724,
+        "RMSE": 8.2849,
+        "MaxError": 43.5488,
+        "is_circular": false
+      },
+      "EyeHeadOffset": {
+        "MAE": 5.8243,
+        "RMSE": 8.2065,
+        "MaxError": 40.6056,
+        "is_circular": false
+      },
+      "LeftOpenness": {
+        "MAE": 0.0111,
+        "RMSE": 0.0263,
+        "MaxError": 0.1277,
+        "is_circular": false
+      },
+      "RightOpenness": {
+        "MAE": 0.005,
+        "RMSE": 0.016,
+        "MaxError": 0.0912,
+        "is_circular": false
+      },
+      "SmileL": {
+        "MAE": 0.0,
+        "RMSE": 0.0,
+        "MaxError": 0.0,
+        "is_circular": false
+      },
+      "SmileR": {
+        "MAE": 0.0,
+        "RMSE": 0.0,
+        "MaxError": 0.0,
+        "is_circular": false
+      },
+      "BrowDownL": {
+        "MAE": 0.0088,
+        "RMSE": 0.0208,
+        "MaxError": 0.087,
+        "is_circular": false
+      },
+      "BrowDownR": {
+        "MAE": 0.0083,
+        "RMSE": 0.0162,
+        "MaxError": 0.072,
+        "is_circular": false
+      },
+      "JawOpen": {
+        "MAE": 0.0,
+        "RMSE": 0.0,
+        "MaxError": 0.0,
+        "is_circular": false
+      },
+      "FaceActivity": {
+        "MAE": 0.005,
+        "RMSE": 0.007,
+        "MaxError": 0.0173,
+        "is_circular": false
+      },
+      "ViewportDirection": {
+        "MeanGreatCircleErrorDeg": 6.6652,
+        "MedianGreatCircleErrorDeg": 3.2603,
+        "RMSEGreatCircleDeg": 11.0981,
+        "MaxGreatCircleErrorDeg": 54.041
+      },
+      "GazeDirection": {
+        "MeanGreatCircleErrorDeg": 12.7289,
+        "MedianGreatCircleErrorDeg": 8.6743,
+        "RMSEGreatCircleDeg": 17.844,
+        "MaxGreatCircleErrorDeg": 62.4143
+      }
+    },
+    "random_forest": {
+      "HeadYaw": {
+        "MAE": 5.4657,
+        "RMSE": 9.2561,
+        "MaxError": 39.9317,
+        "is_circular": true
+      },
+      "HeadPitch": {
+        "MAE": 1.6336,
+        "RMSE": 2.8272,
+        "MaxError": 18.1471,
+        "is_circular": false
+      },
+      "HeadRoll": {
+        "MAE": 0.6617,
+        "RMSE": 0.9823,
+        "MaxError": 6.1873,
+        "is_circular": false
+      },
+      "GazeYaw": {
+        "MAE": 10.8569,
+        "RMSE": 15.7918,
+        "MaxError": 65.5152,
+        "is_circular": true
+      },
+      "GazePitch": {
+        "MAE": 4.0853,
+        "RMSE": 6.4857,
+        "MaxError": 39.9467,
+        "is_circular": false
+      },
+      "GazeRelativeH": {
+        "MAE": 6.6627,
+        "RMSE": 8.833,
+        "MaxError": 33.1061,
+        "is_circular": false
+      },
+      "GazeRelativeV": {
+        "MAE": 4.9338,
+        "RMSE": 7.5838,
+        "MaxError": 41.6959,
+        "is_circular": false
+      },
+      "EyeHeadOffset": {
+        "MAE": 5.1059,
+        "RMSE": 7.0761,
+        "MaxError": 35.94,
+        "is_circular": false
+      },
+      "LeftOpenness": {
+        "MAE": 0.0111,
+        "RMSE": 0.0235,
+        "MaxError": 0.1085,
+        "is_circular": false
+      },
+      "RightOpenness": {
+        "MAE": 0.0064,
+        "RMSE": 0.0189,
+        "MaxError": 0.1475,
+        "is_circular": false
+      },
+      "SmileL": {
+        "MAE": 0.0,
+        "RMSE": 0.0,
+        "MaxError": 0.0,
+        "is_circular": false
+      },
+      "SmileR": {
+        "MAE": 0.0,
+        "RMSE": 0.0,
+        "MaxError": 0.0,
+        "is_circular": false
+      },
+      "BrowDownL": {
+        "MAE": 0.0091,
+        "RMSE": 0.0178,
+        "MaxError": 0.0923,
+        "is_circular": false
+      },
+      "BrowDownR": {
+        "MAE": 0.0072,
+        "RMSE": 0.0142,
+        "MaxError": 0.072,
+        "is_circular": false
+      },
+      "JawOpen": {
+        "MAE": 0.0003,
+        "RMSE": 0.0009,
+        "MaxError": 0.0057,
+        "is_circular": false
+      },
+      "FaceActivity": {
+        "MAE": 0.0051,
+        "RMSE": 0.0068,
+        "MaxError": 0.0232,
+        "is_circular": false
+      },
+      "ViewportDirection": {
+        "MeanGreatCircleErrorDeg": 5.9904,
+        "MedianGreatCircleErrorDeg": 3.0539,
+        "RMSEGreatCircleDeg": 9.612,
+        "MaxGreatCircleErrorDeg": 40.0779
+      },
+      "GazeDirection": {
+        "MeanGreatCircleErrorDeg": 12.5758,
+        "MedianGreatCircleErrorDeg": 8.4242,
+        "RMSEGreatCircleDeg": 16.9981,
+        "MaxGreatCircleErrorDeg": 65.3352
+      }
+    },
+    "deep_gru": {
+      "HeadYaw": {
+        "MAE": 8.3919,
+        "RMSE": 13.7344,
+        "MaxError": 76.4098,
+        "is_circular": true
+      },
+      "HeadPitch": {
+        "MAE": 1.8973,
+        "RMSE": 3.0923,
+        "MaxError": 18.225,
+        "is_circular": false
+      },
+      "HeadRoll": {
+        "MAE": 0.6581,
+        "RMSE": 1.0024,
+        "MaxError": 5.7338,
+        "is_circular": false
+      },
+      "GazeYaw": {
+        "MAE": 13.918,
+        "RMSE": 20.914,
+        "MaxError": 111.9291,
+        "is_circular": true
+      },
+      "GazePitch": {
+        "MAE": 4.418,
+        "RMSE": 6.4084,
+        "MaxError": 25.6172,
+        "is_circular": false
+      },
+      "GazeRelativeH": {
+        "MAE": 7.0266,
+        "RMSE": 9.4763,
+        "MaxError": 35.2855,
+        "is_circular": false
+      },
+      "GazeRelativeV": {
+        "MAE": 5.845,
+        "RMSE": 8.715,
+        "MaxError": 43.6663,
+        "is_circular": false
+      },
+      "EyeHeadOffset": {
+        "MAE": 4.8977,
+        "RMSE": 6.8464,
+        "MaxError": 38.2416,
+        "is_circular": false
+      },
+      "LeftOpenness": {
+        "MAE": 0.0202,
+        "RMSE": 0.031,
+        "MaxError": 0.1333,
+        "is_circular": false
+      },
+      "RightOpenness": {
+        "MAE": 0.0208,
+        "RMSE": 0.0289,
+        "MaxError": 0.112,
+        "is_circular": false
+      },
+      "SmileL": {
+        "MAE": 0.0027,
+        "RMSE": 0.0036,
+        "MaxError": 0.0135,
+        "is_circular": false
+      },
+      "SmileR": {
+        "MAE": 0.0057,
+        "RMSE": 0.0069,
+        "MaxError": 0.0205,
+        "is_circular": false
+      },
+      "BrowDownL": {
+        "MAE": 0.0132,
+        "RMSE": 0.0235,
+        "MaxError": 0.1049,
+        "is_circular": false
+      },
+      "BrowDownR": {
+        "MAE": 0.0134,
+        "RMSE": 0.0211,
+        "MaxError": 0.075,
+        "is_circular": false
+      },
+      "JawOpen": {
+        "MAE": 0.0045,
+        "RMSE": 0.0069,
+        "MaxError": 0.0271,
+        "is_circular": false
+      },
+      "FaceActivity": {
+        "MAE": 0.0054,
+        "RMSE": 0.0072,
+        "MaxError": 0.0186,
+        "is_circular": false
+      },
+      "ViewportDirection": {
+        "MeanGreatCircleErrorDeg": 8.895,
+        "MedianGreatCircleErrorDeg": 5.102,
+        "RMSEGreatCircleDeg": 13.9837,
+        "MaxGreatCircleErrorDeg": 75.8378
+      },
+      "GazeDirection": {
+        "MeanGreatCircleErrorDeg": 15.5921,
+        "MedianGreatCircleErrorDeg": 10.7267,
+        "RMSEGreatCircleDeg": 21.7834,
+        "MaxGreatCircleErrorDeg": 111.8732
+      }
+    }
+  }
+}
