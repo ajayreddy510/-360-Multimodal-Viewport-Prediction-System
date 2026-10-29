@@ -1,0 +1,2 @@
+# Minimal serverless requirements for Vercel
+# Built-in standard library only - avoids bundling large PyTorch and dataset packages
