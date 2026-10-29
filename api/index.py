@@ -21,7 +21,7 @@ FALLBACK_HTML = """<!DOCTYPE html>
     <div class="card">
         <h1>360° Multimodal Viewport Prediction System</h1>
         <p>AI Deep Sequence Architecture for real-time viewport and trajectory prediction in immersive 360° virtual reality.</p>
-        <a href="https://multimodal-viewport-prediction.onrender.com" target="_blank">Launch Streamlit Live App on Render</a>
+        <a href="https://360-multimodal-viewport-prediction-system.onrender.com" target="_blank">Launch Streamlit Live App on Render</a>
     </div>
 </body>
 </html>"""
