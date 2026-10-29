@@ -25,3 +25,6 @@ Thumbs.db
 head.csv
 eye.csv
 face.csv
+
+# Local helper scripts
+push_to_github.*
